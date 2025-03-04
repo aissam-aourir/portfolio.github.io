@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="..." crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .quality-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .quality-container:hover {
+            transform: scale(1.1); /* Agrandir l'élément */
+        }
+
+        .quality-container i {
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 10px;
+        }
+
+        .quality-container:hover i {
+            transform: scale(1.3); /* Agrandir l'icône */
+        }
+
+        .quality-container span {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .quality-container:hover span {
+            transform: scale(1.2); /* Agrandir le texte */
+        }
+
+        .skill {
+            font-size: 1.5rem;
+            color: #E34F26; /* Couleur personnalisée */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .qualities {
+            margin-bottom: 20px;
+        }
+
+        .qualities span {
+            font-size: 1.2rem;
+            color: #F7DF1E; /* Jaune pour un contraste */
+        }
+/*pour les buttons de next et de previous*/
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Aligne les boutons à gauche et à droite */
+    padding: 20px;
+}
+
+.btn-prev, .btn-next {
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-prev:hover, .btn-next:hover {
+    background-color: #0056b3;
+}
+
+.btn-prev { background-color: #ff5733; }
+.btn-next { background-color: #28a745; }
+        
+    </style>
+
+
+</head>
+
+<body class="index-page" >
+                    
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/CVCV.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">AOURIR AISSAM</h1>
+    </a>
+     <!-- Button to download CV -->
+     <div class="download-cv mt-3">
+      <a href="assets/docs/AISSAM-CV.pdf" download class="btn btn-download d-flex align-items-center justify-content-center">
+        <i class="bi bi-download"></i> DOWNLOAD CV
+      </a><br>
+    </div>
+
+    <div class="social-links text-center">
+      <a href="https://www.facebook.com/profile.php?id=100083843084891" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/aissam.aourir?igsh=NTc4MTIwNjQ2YQ==" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://wa.me/212613935238" class="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      <a href="www.linkedin.com/in/aissam-aourir-a0abab2b2" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/aissam-aourir" class="github"><i class="bi bi-github"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="home.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="about.html"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="skills.html" class="active"><i class="bi bi-tools navicon"></i>Skills</a></li>
+        <li><a href="resume.html"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <p>The more that you read, the more things you will know. The more that you learn, the more places you'll go.</p>
+  
+        </div><!-- End Section Title -->
+        <section class="bg-gray-100 py-20">
+          <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold text-blue-700 tracking-wide mb-4" data-aos="fade-up">
+              LANGUAGES
+            </h1>
+            <p class="text-lg text-gray-700" data-aos="fade-up" data-aos-delay="200">
+              Explore the various programming languages that shape the world of technology.
+            </p>
+          </div>
+        </section>
+  
+        <div class="container mx-auto p-8">
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Arabe -->
+                <div class="quality-container">
+                    <i class="fa-solid fa-kaaba text-4xl text-blue-500"></i> <!-- Icône qui fait référence à l'arabe -->
+                    <span class="skill">Arabe</span>
+                    <p class="text-gray-400">Langue maternelle. Parlé et écrit couramment.</p>
+                </div>
+    
+                <!-- Amazigh -->
+                <div class="quality-container">
+                    <i class="fa-solid fa-mountain text-4xl text-green-500"></i> <!-- Icône représentant les montagnes de l'Atlas pour l'amazigh -->
+                    <span class="skill">Amazigh</span>
+                    <p class="text-gray-400">Langue maternelle. Parlé et écrit couramment.</p>
+                </div>
+    
+                <!-- Français -->
+                <div class="quality-container">
+                    <i class="fa-solid fa-flag text-4xl text-blue-600"></i> <!-- Icône générique du drapeau européen -->
+                    <span class="skill">Français</span>
+                    <p class="text-gray-400">Niveau élevé. Couramment parlé et écrit.</p>
+                </div>
+    
+                <!-- Anglais -->
+                <div class="quality-container">
+                    <i class="fa-solid fa-flag-usa text-4xl text-yellow-500"></i> <!-- Icône du drapeau américain pour l'anglais -->
+                    <span class="skill">Anglais</span>
+                    <p class="text-gray-400">Niveau intermédiaire. Compréhension et expression écrite de base.</p>
+                </div>
+            </div>
+        </div>
+  
+        </div>
+  
+  
+  
+  
+  
+      </section><!-- /Skills Section -->
+      
+      <div class="button-container">
+        <a href="p-languages.html" class="btn-prev">← Previous</a>
+        <a href="qualities.html" class="btn-next">Next →</a>
+    </div>
+    
+
+  </main>
+    
+  <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+         
+      
+          <!-- Display current date and time -->
+          <div id="datetime" class="text-center mt-3">
+            <p id="clock"></p>
+            <p id="date"></p>
+          </div>
+        </div>
+  </footer>
+      
+      
+    
+      <!-- Scroll Top -->
+      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+      <!-- Preloader -->
+      <div id="preloader"></div>
+    
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/typed.js/typed.umd.js"></script>
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    
+      <!-- Main JS File -->
+      <script src="assets/js/main.js"></script>
+      <!-- script javascript pour le teme reel pour le footer -->
+      <script src="script.js"></script>
+    
+    </body>
+    
+    </html>
