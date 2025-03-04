@@ -35,6 +35,35 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    .school-card {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .school-card:hover {
+      transform: scale(1.05);
+    }
+  
+    .school-img {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .resume-item p {
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+    /*
+    code ajoute pour l'ajput de la photo des ecoles
+    */
     .button-container {
       display: flex;
       justify-content: space-around;
@@ -63,6 +92,29 @@
     .section-content.active {
       display: block;
     }
+
+    /*pour le button de voir*/
+    .btn-custom {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 20px; /* Réduction du padding pour un bouton plus petit */
+      border: none;
+      border-radius: 4px; /* Un rayon de bordure plus petit */
+      font-size: 14px; /* Taille de police réduite pour mieux s'adapter au bouton */
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .btn-custom:hover {
+      background-color: #0056b3;
+      transform: scale(1.05); /* Effet de zoom plus léger */
+    }
+  
+    .btn-custom:focus {
+      outline: none;
+    }
   </style>
 </head>
 
@@ -88,29 +140,27 @@
     </div>
 
     <div class="social-links text-center">
-      <a href="https://www.facebook.com/profile.php?id=100083843084891" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/aissam.aourir?igsh=NTc4MTIwNjQ2YQ==" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="https://wa.me/212613935238" class="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-      <a href="www.linkedin.com/in/aissam-aourir-a0abab2b2" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/aissam-aourir" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100083843084891" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/aissam.aourir?igsh=NTc4MTIwNjQ2YQ==" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://wa.me/212613935238" class="WhatsApp" target="_blank"><i class="bi bi-whatsapp"></i></a>
+      <a href="linkedin.com/in/aissam-aourir-655622352" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/aissam-aourir" class="github" target="_blank"><i class="bi bi-github"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="about.html"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="skills.html" class="active"><i class="bi bi-tools navicon"></i>Skills</a></li>
         <li><a href="resume.html"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="galerie.html"><i class="bi bi-images navicon"></i> Galerie</a></li>
         <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
 
   </header>
-  
-
-  
-    <main class="main">
+   
+  <main class="main">
       <!-- Skills Section -->
       <section id="skills" class="skills section light-background">
     
@@ -139,11 +189,11 @@
 
          <div class="row">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100"> <!--c'est pour diviser la page en deux -->
             <h3 class="resume-title">Sumary</h3>
 
             <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
+              <h4>AOURIR Aissam</h4>
               <p><em>A fourth-year Computer Engineering student at the National School of Applied Sciences (ENSA), Marrakech, with a solid four-year foundation in the field. Passionate about logic, algorithms, and programming, I have built strong skills in web development, database management, and object-oriented programming. I am eager to take on new challenges that allow me to grow my technical expertise and contribute to innovative projects.
 
                 My goal is to apply my knowledge to practical projects, combining my love for solving complex problems with a commitment to creating efficient digital solutions. Motivated and focused, I am looking to gain professional experience that will expand my horizons.</em></p>
@@ -151,25 +201,97 @@
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Engineering Degree in Computer Science &amp; Graphic Design</h4>
+              <h4>Engineering Degree in Computer Science </h4>
               <h5>2021 - Present</h5>
               <p><em>National School of Applied Sciences (ENSA), Avenue Abdelkrim Elkhattabi,Marrakech 40000,, Morocco</em></p>
+              <div class="school-card">
+                <img src="assets/img/ensa.jpg" alt="ENSA Marrakech" class="school-img">
+                <p>Currently pursuing an engineering degree with a strong focus on programming, algorithms, and software development.</p>
+                
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.999392146353!2d-8.017790574445451!3d31.64686807415626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee9e5e2bd20f%3A0x2cf9300f935096fa!2z2KfZhNmF2K_Ysdiz2Kkg2KfZhNmI2LfZhtmK2Kkg2YTZhNi52YTZiNmFINin2YTYqti32KjZitmC2YrYqV_Zhdix2KfZg9i0!5e1!3m2!1sar!2sma!4v1739451009223!5m2!1sar!2sma" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
               <h5>2021 - 2023 :Preparatory Classes</h5>
               <p>
                 During these two years, I focused on building a solid foundation in mathematics, physics, and computer science, preparing for the engineering program at ENSA.
               </p>
+              <ul>
+                    <li>
+                      2021-2022:
+                <p>Success In My First Year In Ensa And In Preparatory Class.</p>
+                  <a href="assets/docs/releve-cp1.pdf" target="_blank"><button  type="button" class="btn btn-custom">See</button>
+                  </a>
+                </li>
+                <li>
+                <h6>2022-2023:</h6>
+                <p>Success In My second Year In Ensa And In Preparatory Class.</p>
+                  <a href="assets/docs/releve-cp2.pdf" target="_blank"><button  type="button" class="btn btn-custom">See</button>
+                  </a>
+                </li>
+              </ul>
               <h5>2023 - 2025 :Engineering Cycle</h5>
               <p>
                 During these two years, I have gained strong foundational knowledge in computer science, programming, and problem-solving techniques, preparing for the final stages of my engineering education.
               </p>
+              <ul>
+                <li>2023-2024:
+                <p>Success In My fourth Year In Ensa And first year in Engineering Cycle</p>
+                  <a href="assets/docs/releve-ci1.pdf" target="_blank"><button  type="button" class="btn btn-custom">See</button>
+                  </a>
+                </li>
+              </ul>
+
             </div><!-- Edn Resume Item -->
 
-            <div class="resume-item">
+           <div class="resume-item">
               <h4>Studies at El-Khawarizmi High School In Comune of Mejjat &amp; Graphic Design</h4>
               <h5>2018 - 2021</h5>
               <p><em>Scientific Baccalaureate, BIOF option (French International Baccalaureate)</em></p>
-              <p>2021: Obtained my Baccalaureate in Physical Sciences with "Very Good" honors</p>
+              <div class="school-card">
+              <img src="assets/img/elkhawarizmi.jpg" alt="ENSA Lycée El Khawarizmi" class="school-img">
+              <p>Completed high school at Lycée El Khawarizmi, focusing on mathematics, science, and technology, building a strong foundation for engineering studies.</p>                
             </div><!-- Edn Resume Item -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.9580752701318!2d-8.501395774430566!3d31.364098274285812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdae2abe64555555%3A0x90ab428a93570db6!2z2KvYp9mG2YjZitipINin2YTYrtmI2KfYsdiy2YXZig!5e1!3m2!1sar!2sma!4v1739451417703!5m2!1sar!2sma" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            <ul>
+              <li>
+              2020:<p>I took the Regional exam for my first year of Baccalaureate and achieved a 'Good' grade.</p>
+             <a href="assets/docs/regionnal.pdf" target="_blank"><br>
+               <button type="button" class="btn btn-custom">See</button>
+             </a>
+              </li>
+            <li>
+              2021:<ul>
+              <li> <p>I took the National exam for my second year of Baccalaureate and achieved a ' Very Good' grade.</p>
+               <a href="assets/docs/national.pdf" target="_blank">
+               <button type="button" class="btn btn-custom">See</button></a></li>
+               <li><p>Obtained my Baccalaureate in Physical Sciences with "Very Good" honors.</p>
+               <a href="assets/docs/bac.pdf" target="_blank"><br>
+               <button type="button" class="btn btn-custom">See</button></a>
+              </li>
+            </ul>
+            </li>
+            </ul>
+           </div>
+
+           <div class="resume-item">
+            <h4>Studies at Anas Bno-Malik Middle School In Comune of Mejjat</h4>
+            <h5>2015 - 2018</h5>
+            <div class="school-card">
+            <img src="assets/img/anasbnomalik.jpg" alt="Anas Bno-Malik Middle School" class="school-img">
+            <p>Completed middle school at Anas Bno-Malik Middle School, developing foundational skills in mathematics, science, and technology, preparing for higher education.</p>                
+          </div><!-- Edn Resume Item -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.301472478747!2d-8.506767674429957!3d31.351845974291606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdae2be7c28e6e01%3A0xd8ffa230a2dca1b0!2z2YXYrNin2Lc!5e1!3m2!1sar!2sma!4v1739466465591!5m2!1sar!2sma" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
+           </div>
+    
+           <div class="resume-item">
+            <h4>Studies at El-Mowahidin School In Comune of Mejjat</h4>
+            <h5>2009 - 2015</h5>
+            <div class="school-card">
+            <img src="assets/img/anasbnomalik.jpg" alt="Anas Bno-Malik Middle School" class="school-img">
+            <p>Completed primary education at El-Mowahidin School, building essential skills in mathematics, science, and language, forming a strong academic foundation.</p>                
+          </div><!-- Edn Resume Item -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d658.7655184235987!2d-8.507283169529238!3d31.360388098392995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdae2bb26203cdd1%3A0xef8f5ba198a6f27!2z2KfZhNmF2K_Ysdiz2Kkg2KfZhNin2KjYqtiv2KfYptmK2Kkg2KfZhNmF2YjYrdiv2YrZhg!5e1!3m2!1sar!2sma!4v1739466956075!5m2!1sar!2sma" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           </div>
+          
+
 
           </div>
 
@@ -192,7 +314,7 @@
               <div class="container">
     
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="resume-title">Works And Experiences</h3>
+                <h3 class="resume-title">projects</h3>
                 <div class="resume-item">
                   <h4>Completed a group project on game development</h4>
                   <h5>2023</h5>
@@ -234,24 +356,17 @@
           
         </div>
       </section><!-- /Skills Section -->
-    </main>
+  </main>
     
-    
-    
-    
-    
-    
-    <footer id="footer" class="footer position-relative light-background">
-      <div class="container">
-       
-    
-        <!-- Display current date and time -->
+  <footer id="footer" class="footer position-relative light-background">
+  <div class="container">
+       <!-- Display current date and time -->
         <div id="datetime" class="text-center mt-3">
           <p id="clock"></p>
           <p id="date"></p>
         </div>
       </div>
-</footer>
+  </footer>
   
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
